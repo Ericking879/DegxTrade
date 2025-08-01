@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  padding: 20px 16px 80px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.top-header h2 {
+  font-size: 22px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-right: 10px;
+  color: #aaa;
+}
+
+.user-info i {
+  font-size: 20px;
+  color: #aaa;
+}
+
+.dashboard-content {
+  margin-top: 20px;
+}
+
+.market-overview, .quick-actions {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.market-overview h3, .quick-actions h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.market-stats div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.quick-actions button {
+  background-color: #1a1a1a;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.quick-actions i {
+  margin-right: 5px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #222;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.bottom-nav button i {
+  font-size: 18px;
+}
+
+.bottom-nav button:hover, .bottom-nav button:focus {
+  color: #f5b014;
+}

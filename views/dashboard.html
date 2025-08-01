@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Degx</title>
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <link rel="stylesheet" href="/fonts/css/all.min.css" />
+<body>
+  <div class="container">
+    <header class="top-header">
+      <h2>Degx Exchange</h2>
+      <div class="user-info">
+        <span>Welcome, <span id="user-email"></span></span>
+        <i class="fas fa-user"></i>
+      </div>
+    </header>
+
+    <section class="dashboard-content">
+      <div class="market-overview">
+        <h3>Market Overview</h3>
+        <div class="market-stats">
+          <div><span>BTC/USD</span><span>65,000.00</span></div>
+          <div><span>ETH/USD</span><span>3,200.00</span></div>
+          <div><span>USDT/USD</span><span>1.00</span></div>
+        </div>
+      </div>
+      <div class="quick-actions">
+        <h3>Quick Actions</h3>
+        <button class="nav-btn" data-href="/deposit"><i class="fas fa-arrow-down"></i> Deposit</button>
+        <button class="nav-btn" data-href="/withdraw"><i class="fas fa-arrow-up"></i> Withdraw</button>
+        <button class="nav-btn" data-href="/trade"><i class="fas fa-exchange-alt"></i> Trade</button>
+      </div>
+    </section>
+  </div>
+
+  <footer class="bottom-nav">
+    <button class="nav-btn" data-href="/dashboard"><i class="fas fa-home"></i><span>Home</span></button>
+    <button class="nav-btn" data-href="/markets"><i class="fas fa-chart-line"></i><span>Markets</span></button>
+    <button class="nav-btn" data-href="/trade"><i class="fas fa-exchange-alt"></i><span>Trade</span></button>
+    <button class="nav-btn" data-href="/earn"><i class="fas fa-coins"></i><span>Earn</span></button>
+    <button class="nav-btn" data-href="/asset"><i class="fas fa-wallet"></i><span>Assets</span></button>
+  </footer>
+
+  <script nonce="<%= nonce %>" src="/js/dashboard.js"></script>
+</body>
+</html>

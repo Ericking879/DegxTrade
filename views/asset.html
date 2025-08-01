@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Assets - Degx</title>
+  <link rel="stylesheet" href="/css/asset.css">
+  <link rel="stylesheet" href="/fonts/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="top-header">
+      <h2>My Assets</h2>
+      <i class="fas fa-qrcode scan-icon"></i>
+    </header>
+
+    <section class="asset-summary">
+      <div class="total-assets">
+        <p>Total Assets</p>
+        <h1>$<span id="total-usd">0.00</span> <span>USD</span></h1>
+        <small>≈ <span id="total-btc">0.00000000</span> BTC</small>
+      </div>
+
+      <div class="action-buttons">
+        <button class="action-btn" data-action="deposit"><i class="fas fa-arrow-down"></i>Deposit</button>
+        <button class="action-btn" data-action="withdraw"><i class="fas fa-arrow-up"></i>Withdraw</button>
+        <button class="action-btn" data-action="transfer"><i class="fas fa-exchange-alt"></i>Transfer</button>
+      </div>
+    </section>
+
+    <section class="accounts">
+      <div class="tabs">
+        <span class="tab active" data-view="account">Account</span>
+        <span class="tab" data-view="asset">Asset</span>
+      </div>
+      
+      <div id="account-items" class="view active">
+        <!-- Funding Wallet -->
+        <div class="wallet-section" data-wallet="funding">
+          <div class="wallet-header">
+            <div class="wallet-info">
+              <i class="fas fa-wallet"></i>
+              <div>
+                <h3>Funding Wallet</h3>
+                <p class="wallet-balance">$<span class="wallet-usd">0.00</span> USD</p>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <!-- Trading Wallet -->
+        <div class="wallet-section" data-wallet="trading">
+          <div class="wallet-header">
+            <div class="wallet-info">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <h3>Trading Wallet</h3>
+                <p class="wallet-balance">$<span class="wallet-usd">0.00</span> USD</p>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <!-- Portfolio Wallet -->
+        <div class="wallet-section" data-wallet="portfolio">
+          <div class="wallet-header">
+            <div class="wallet-info">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <h3>Portfolio Wallet</h3>
+                <p class="wallet-balance">$<span class="wallet-usd">0.00</span> USD</p>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      
+      <div id="asset-items" class="view">
+        <div class="asset-list-header">
+          <p>Assets</p>
+          <button class="hide-zero">Hide Zero Balances</button>
+        </div>
+        <div class="asset-list"></div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="bottom-nav">
+    <button class="nav-btn" data-href="/dashboard"><i class="fas fa-home"></i><span>Home</span></button>
+    <button class="nav-btn" data-href="/markets"><i class="fas fa-chart-line"></i><span>Markets</span></button>
+    <button class="nav-btn" data-href="/trade"><i class="fas fa-exchange-alt"></i><span>Trade</span></button>
+    <button class="nav-btn" data-href="/earn"><i class="fas fa-coins"></i><span>Earn</span></button>
+    <button class="nav-btn active-tab" data-href="/asset"><i class="fas fa-wallet"></i><span>Assets</span></button>
+  </footer>
+
+  <script nonce="<%= nonce %>" src="/js/asset.js"></script>
+</body>
+</html>
